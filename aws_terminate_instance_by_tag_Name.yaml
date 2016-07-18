@@ -1,0 +1,7 @@
+- name: Terminate instances by tag Name
+  hosts: localhost
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - include: tasks/aws/instances_terminate_by_name.yaml
